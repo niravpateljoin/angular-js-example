@@ -1,0 +1,63 @@
+/* General styles for the home content */
+.home-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Page title */
+  .page-title {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Center the title */
+  .text-center {
+    text-align: center;
+  }
+  
+  /* Content sections */
+  .content-section {
+    margin-top: 20px;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .content-section p {
+    font-size: 1.1em;
+    color: #555;
+    line-height: 1.6;
+  }
+  
+  .content-section strong {
+    font-size: 1.3em;
+    color: #333;
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  /* Last section should not have a border-bottom */
+  .content-section:last-child {
+    border-bottom: none;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 600px) {
+    .home-content {
+      padding: 15px;
+    }
+  
+    .page-title {
+      font-size: 2em;
+    }
+  
+    .content-section p {
+      font-size: 1em;
+    }
+  }
+  

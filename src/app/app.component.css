@@ -1,0 +1,17 @@
+.app-container {
+    background: #333;
+ }
+.page-wrapper {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px 0;
+}
+
+.container .page-wrapper {
+    background-color: white;
+}
+

@@ -1,0 +1,33 @@
+<div class="form-container">
+    <form #form="ngForm" (ngSubmit)="performOperation()">
+      <div class="form-group">
+        <label for="text">Enter a string:</label>
+        <textarea name="text-to-perform" id="text" [(ngModel)]="text" required></textarea>
+      </div>
+
+      <div *ngIf="selectedOperation == 'anagram'" class="form-group">
+        <label for="subText">Enter a Second String:</label>
+        <textarea name="subtext-to-perform" id="subtext" [(ngModel)]="subText"></textarea>
+      </div>
+      
+      <div class="form-group">
+        <label for="operation">Select operation:</label>
+        <select id="operation" name="operation" [(ngModel)]="selectedOperation" required>
+            <option value="">Select Operation</option>
+            <option value="palindrome">Palindrome</option>
+            <option value="pangram">Pangram</option>
+            <option value="anagram">Anagram</option>
+        </select>
+      </div>
+      
+      <button type="submit" class="btn-submit">Perform Operation</button>
+    </form>
+
+    <div *ngIf="result != null" class="result result-{{ result }}" @fadeInOut>
+        <p>{{ resultMessage }}</p>
+        <p class="close-icon" (click)="closeResultSection()"></p>
+    </div>
+</div>
+
+
+  
